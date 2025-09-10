@@ -40,7 +40,7 @@ contract VestingWallet is Ownable {
     }
 
     /// @notice Immutable ERC20 token that will be vested
-    IERC20 public immutable i_token;
+    IERC20 private immutable i_token;
 
     /// @notice Mapping from beneficiary address to their vesting schedule
     mapping(address => VestingSchedule) public s_vestingSchedules;
@@ -163,5 +163,22 @@ contract VestingWallet is Ownable {
      */
     function contractTokenBalance() external view returns (uint256) {
         return i_token.balanceOf(address(this));
+    }
+
+    /**
+     * @notice Returns the address of the ERC20 token being vested
+     * @return The address of the vested token
+     */
+    function getTokenAddress() external view returns (address) {
+        return address(i_token);
+    }
+
+    /**
+     * @notice Returns the owner of the contract
+     * @dev This function is added to facilitate testing and interaction with the Ownable contract
+     * @return The address of the contract owner
+     */
+    function getContractOwner() external view returns (address) {
+        return owner();
     }
 }
