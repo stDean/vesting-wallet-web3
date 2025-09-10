@@ -130,7 +130,7 @@ contract VestingWallet is Ownable {
      * @param _beneficiary The address of the beneficiary to check
      * @return The amount of tokens that have vested for this specific beneficiary
      */
-    function vestedAmount(address _beneficiary) internal view returns (uint256) {
+    function vestedAmount(address _beneficiary) public view returns (uint256) {
         VestingSchedule memory schedule = s_vestingSchedules[_beneficiary];
         if (schedule.totalAmount == 0) {
             return 0;
