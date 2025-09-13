@@ -6,7 +6,7 @@ import {VestingWallet} from "src/VestingWallet.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {MockToken} from "src/MockToken.sol";
 
-contract Handler is Test {
+contract VestingWalletHandler is Test {
     VestingWallet public vestingWallet;
     MockToken public token;
     address public owner;
