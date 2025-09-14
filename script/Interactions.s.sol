@@ -8,7 +8,7 @@ import {MockToken} from "src/MockToken.sol";
 
 /**
  * @title CreateVestingSchedule
- * @author Your Name
+ * @author Dean
  * @notice Script to create a vesting schedule for a beneficiary
  * @dev This script creates a vesting schedule with a configurable start time and duration
  */
@@ -79,7 +79,7 @@ contract CreateVestingSchedule is Script {
 
 /**
  * @title ReleaseToken
- * @author Your Name
+ * @author Dean
  * @notice Script to release vested tokens to a beneficiary
  * @dev This script releases all available vested tokens to the beneficiary
  */
@@ -144,7 +144,7 @@ contract ReleaseToken is Script {
 
 /**
  * @title TimeWarpReleaseToken
- * @author Your Name
+ * @author Dean
  * @notice Script to warp time and then release vested tokens
  * @dev This script warps time to simulate the passage of time before releasing tokens
  */

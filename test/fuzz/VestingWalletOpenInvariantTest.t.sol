@@ -10,7 +10,7 @@ import {DeployVestingWallet} from "script/DeployVestingWallet.s.sol";
 
 /**
  * @title VestingWalletOpenInvariantTest
- * @author Your Name
+ * @author Dean
  * @notice Open invariant test suite for VestingWallet contract
  * @dev This contract tests fundamental properties and invariants of the VestingWallet contract
  * using Foundry's testing framework with invariant testing support. It verifies that critical
